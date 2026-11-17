@@ -11,7 +11,8 @@ This repository shows selected parts of the game's source code as a portfolio pi
 ![Rojo](https://img.shields.io/badge/Rojo-E13835?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Studio%20automation-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-<img src="docs/media/sky-island-map.png" alt="The Sky Island map: a floating island with a winding enemy path, towers spots and the castle base" width="640">
+<img src="docs/media/sky-island-map.png" alt="The Sky Island map: a floating island with a winding enemy path, tower spots and the castle base" height="330">
+<img src="docs/media/all-clear.jpg" alt="Gameplay: the tower loadout bar, the boss health bar and the ALL CLEAR banner" height="330">
 
 </div>
 
@@ -23,8 +24,6 @@ by placing and upgrading towers from their loadout. When the match ends, everyon
 and is sent back to the lobby, where towers are unlocked from crates and arranged into a loadout.
 
 It runs on desktop and on phones, and the in-game UI is built with React-lua.
-
-<img src="docs/media/all-clear.jpg" alt="Gameplay: the tower loadout bar, the boss health bar and the ALL CLEAR banner" width="270" align="right">
 
 **What this repository includes:**
 
@@ -39,12 +38,10 @@ This is an **excerpt**, not the full game. Things that would help cheaters or cl
 tower combat, the economy and saved data, remote-call validation, purchases, admin tools and balance data.
 It will not build by itself, since the files it requires are not all here.
 
-<br clear="right">
-
 ## Architecture
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Lobby["Lobby place"]
         LP[Party pads] -->|TeleportAsync<br/>with match settings| TP
         LS[Summon / loadout / shop]
