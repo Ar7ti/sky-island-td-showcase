@@ -1,0 +1,48 @@
+{
+  "name": "Tower Defence Game",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedFirst": {
+      "$path": "src/match/replicatedFirst",
+      "LoadingScreenUI": {
+        "$path": "src/loading/LoadingScreen.luau"
+      }
+    },
+    "ReplicatedStorage": {
+      "MatchState": {
+        "$className": "Folder",
+        "$attributes": {
+          "Phase": "Waiting",
+          "Wave": 0,
+          "Alive": 0,
+          "TimeRemaining": 0,
+          "MusicCategory": "Normal"
+        }
+      },
+      "Shared": {
+        "$path": "src/shared"
+      },
+      "Packages": {
+        "$path": "Packages"
+      }
+    },
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/match/server"
+      },
+      "ServerPackages": {
+        "$path": "ServerPackages"
+      },
+      "SharedServer": {
+        "$path": "src/serverShared"
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/match/client"
+        }
+      }
+    }
+  }
+}

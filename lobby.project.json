@@ -1,0 +1,39 @@
+{
+  "name": "Tower Defence Lobby",
+  "servePort": 34873,
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedFirst": {
+      "$path": "src/lobby/replicatedFirst",
+      "LoadingScreenUI": {
+        "$path": "src/loading/LoadingScreen.luau"
+      }
+    },
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/shared"
+      },
+      "Packages": {
+        "$path": "Packages"
+      }
+    },
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/lobby/server"
+      },
+      "ServerPackages": {
+        "$path": "ServerPackages"
+      },
+      "SharedServer": {
+        "$path": "src/serverShared"
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/lobby/client"
+        }
+      }
+    }
+  }
+}

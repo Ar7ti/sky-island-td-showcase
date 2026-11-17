@@ -1,0 +1,5 @@
+std = "roblox"
+
+[rules]
+# One-line guards (`if x then return end`) are the house style.
+multiple_statements = "allow"
